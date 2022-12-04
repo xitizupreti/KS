@@ -4,7 +4,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  /* pointer-events: none; */
 }
 .header {
   background-color: yellow;
@@ -15,19 +14,24 @@
   cursor: default;
 }
 
-.pad {
-  padding-left: 20px;
+
+
+@media screen and (min-width: 600px) {
+  .pad {
+    margin-left: 20px;
+  }
+  .header img{
+    margin-right: 150px;
 }
-.header img{
-    padding-right: 150px;
 }
+
 .header img:hover {
   transform: scale(1.2);
 }
 
 .menu{
-    padding-top: 20px;
-    padding-left: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
     color: chartreuse;
     width: fit-content;
 }
