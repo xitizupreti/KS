@@ -18,7 +18,7 @@ const Header = () => {
             visible={true}
           />
         </div>
-        <h1>
+        <h1 className="name">
           <span style={{ color: "blue" }}>Kshitiz</span>💘
           <span style={{ color: "red" }}>Srijal</span>
         </h1>
