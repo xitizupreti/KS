@@ -1,5 +1,5 @@
 import React from "react";
-import Photos from "./Photos.Jsx";
+// import Photos from "./Photos.Jsx";
 // import {Routes, Route, BroswerRouter} from "react-router-dom";
 
 const Body = () => {
