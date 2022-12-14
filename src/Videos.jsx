@@ -17,6 +17,7 @@ const Videos = () => {
       {/* {images.map((val) => {
         return <img src={val.images[0]} />;
       })} */}
+            <video alt="" className="vid" src={videos[0]}/>
       <video className="vid" preload="metadata" controls><source src={videos[0]}/> </video>
       <video className="vid" preload="metadata" controls><source src={videos[1]}/> </video>
       <video className="vid" preload="metadata" controls><source src={videos[2]}/> </video>
