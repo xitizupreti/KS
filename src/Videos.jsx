@@ -13,7 +13,7 @@ const Videos = () => {
     require.context("./videos")
   );
   return (
-    <><div className="photos">
+    <><div className="photo">
       {/* {images.map((val) => {
         return <img src={val.images[0]} />;
       })} */}
