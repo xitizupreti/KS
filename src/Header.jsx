@@ -6,7 +6,9 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <img src={logo} alt="logo" width="80" height="90%" />
+        <a href="./home">
+          <img src={logo} alt="logo" width="80" height="90%" />
+        </a>
         <div className="pad">
           <Hearts
             height="80"
@@ -18,7 +20,7 @@ const Header = () => {
             visible={true}
           />
         </div>
-        <h1 className="name">
+        <h1 style={{marginTop:"10px"}}>
           <span style={{ color: "blue" }}>Kshitiz</span>💘
           <span style={{ color: "red" }}>Srijal</span>
         </h1>
@@ -33,11 +35,6 @@ const Header = () => {
             visible={true}
           />
         </div>
-      </div>
-      <div className="menu">
-        <h2><a href="./photos">Photos</a></h2>
-        <h2><a href="./videos">Videos</a></h2>
-        <h2><a href="./stories">Stories</a></h2>
       </div>
     </>
   );
