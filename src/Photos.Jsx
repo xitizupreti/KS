@@ -3,7 +3,7 @@ import React from "react";
 const Photos = () => {
   return (
     <>
-      test
+      <p>test</p>
     </>
   );
 };

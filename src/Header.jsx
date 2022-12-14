@@ -34,6 +34,11 @@ const Header = () => {
           />
         </div>
       </div>
+      <div className="menu">
+        <h2><a href="./photos">Photos</a></h2>
+        <h2><a href="./videos">Videos</a></h2>
+        <h2><a href="./stories">Stories</a></h2>
+      </div>
     </>
   );
 };

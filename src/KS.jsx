@@ -1,14 +1,16 @@
 import React from "react";
 import Header from "./Header";
-import Body from "./Body";
+import Photos from "./Photos";
+import { Routes, Route } from "react-router-dom";
 
-const KS =()=>{
-    return(
-        <>
-        <Header />
-        <Body />
-        </>
-    )
+const KS = () => {
+  return (
+    <><Header />
+      <Routes>
+        <Route path="photos" element={<Photos />} />
+      </Routes>
+    </>
+  );
 };
 
 export default KS;
