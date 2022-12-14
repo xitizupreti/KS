@@ -17,16 +17,16 @@ const Pictures = () => {
       {/* {images.map((val) => {
         return <img src={val.images[0]} />;
       })} */}
-      <img src={images[0]} />
-      <img src={images[1]} />
-      <img src={images[2]} />
-      <img src={images[3]} />
-      <img src={images[4]} />
-      <img src={images[5]} />
-      <img src={images[6]} />
-      <img src={images[7]} />
-      <img src={images[8]} />
-      <img src={images[9]} />
+      <img alt="" src={images[0]} />
+      <img alt="" src={images[1]} />
+      <img alt="" src={images[2]} />
+      <img alt="" src={images[3]} />
+      <img alt="" src={images[4]} />
+      <img alt="" src={images[5]} />
+      <img alt="" src={images[6]} />
+      <img alt="" src={images[7]} />
+      <img alt="" src={images[8]} />
+      <img alt="" src={images[9]} />
       </div>
     </>
   );

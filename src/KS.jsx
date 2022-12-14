@@ -9,7 +9,7 @@ import { Routes, Route, NavLink,redirect} from "react-router-dom";
 
 const KS = () => {
   function here(){
-    if (window.confirm('Consumes More Data!')==0){
+    if (window.confirm('Consumes More Data!')===0){
       return redirect("/home");
     }
   }
