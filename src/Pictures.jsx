@@ -1,6 +1,6 @@
 import React from "react";
 
-const Photo = () => {
+const Pictures = () => {
   function importAll(r) {
     let images = [];
     r.keys().map((item, index) => {
@@ -10,10 +10,10 @@ const Photo = () => {
     return images;
   }
   const images = importAll(
-    require.context("./photo")
+    require.context("./pictures")
   );
   return (
-    <><div className="photo">
+    <><div className="pictures">
       {/* {images.map((val) => {
         return <img src={val.images[0]} />;
       })} */}
@@ -32,4 +32,4 @@ const Photo = () => {
   );
 };
 
-export default Photo;
+export default Pictures;

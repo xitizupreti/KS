@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Photo from "./Photo";
+import Pictures from "./Pictures";
 import Error from "./Error";
 import Home from "./Home";
 import Videos from "./Videos";
@@ -20,8 +20,8 @@ const KS = () => {
       <NavLink activeclassname="active" to="./home">
           Home
         </NavLink>
-        <NavLink activeclassname="active" to="./photo">
-          Photos
+        <NavLink activeclassname="active" to="./pictures">
+          Pictures
         </NavLink>
         <NavLink activeclassname="active" onClick={here} to="./videos">
           Videos
@@ -35,7 +35,7 @@ const KS = () => {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="home" element={<Home/>} />
-        <Route path="photo" element={<Photo />} />
+        <Route path="pictures" element={<Pictures/>} />
         <Route path="videos" element={<Videos />} />
         <Route path="stories" element={<Stories />} />
         <Route path="*" element={<Error />} />
