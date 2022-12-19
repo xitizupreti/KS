@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from 'react-player';
 
 const Videos = () => {
     function importAll(r) {
@@ -10,25 +11,24 @@ const Videos = () => {
     return videos;
   }
   const videos = importAll(
-    require.context("./videos")
+    require.context("../public/videos")
   );
   return (
-    <><div className="pictures">
-      {/* {images.map((val) => {
-        return <img src={val.images[0]} />;
-      })} */}
-            <video alt="" className="vid" src={videos[0]}/>
-      <video className="vid" preload="metadata" controls><source src={videos[0]}/> </video>
-      <video className="vid" preload="metadata" controls><source src={videos[1]}/> </video>
-      <video className="vid" preload="metadata" controls><source src={videos[2]}/> </video>
-      <video className="vid" preload="metadata" controls><source src={videos[3]}/> </video>
-      <video className="vid" preload="metadata" controls><source src={videos[4]}/> </video>
-      <video className="vid" preload="metadata" controls><source src={videos[5]}/> </video>
-      <video className="vid" preload="metadata" controls><source src={videos[6]}/> </video>
-      <video className="vid" preload="metadata" controls><source src={videos[7]}/> </video>
-      <video className="vid" preload="metadata" controls><source src={videos[8]}/> </video>
-      </div>
-    </>
+    <>
+      {/* {videos.map(({val}) => (
+        <ReactPlayer className="vid" url={val} />
+      ))} */}
+      <ReactPlayer controls className="vid" url='videos/test.MP4'/>
+      <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[0]}/> </video>
+      <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[1]}/> </video>
+      <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[2]}/> </video>
+      <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[3]}/> </video>
+      <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[4]}/> </video>
+      <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[5]}/> </video>
+      <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[6]}/> </video>
+      <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[7]}/> </video>
+      <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[8]}/> </video>
+      </>
   );
 };
 
