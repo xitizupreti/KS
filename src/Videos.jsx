@@ -1,5 +1,4 @@
 import React from "react";
-import ReactPlayer from 'react-player';
 
 const Videos = () => {
     function importAll(r) {
@@ -18,7 +17,6 @@ const Videos = () => {
       {/* {videos.map(({val}) => (
         <ReactPlayer className="vid" url={val} />
       ))} */}
-      <ReactPlayer controls className="vid" url='videos/test.MP4'/>
       <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[0]}/> </video>
       <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[1]}/> </video>
       <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[2]}/> </video>
