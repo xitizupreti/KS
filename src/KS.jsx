@@ -5,17 +5,15 @@ import Error from "./Error";
 import Home from "./Home";
 import Videos from "./Videos";
 import Stories from "./Stories";
-import { Routes, Route, NavLink, useNavigate} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 const KS = () => {
-  
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="home" element={<Home/>} />
-        <Route path="pictures" element={<Pictures/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="pictures" element={<Pictures />} />
         <Route path="videos" element={<Videos />} />
         <Route path="stories" element={<Stories />} />
         <Route path="*" element={<Error />} />

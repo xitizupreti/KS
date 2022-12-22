@@ -110,3 +110,47 @@ hr {
   /* height:200px;
   width: 200px; */
 }
+
+.heart{
+position: fixed;
+transform: translateY(0);
+animation: fall 3s linear;
+top: -3vh;
+}
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+  
+}
+
+.story{
+  margin-left: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-size: large;
+  font-weight:500;
+  color: rgb(37, 145, 10);
+  background-color: aliceblue;
+}
+.title{
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  color: rgb(25, 8, 179);
+  width: fit-content;
+  background-color: rgb(138, 136, 243);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.title:hover {
+  background-color: #3e8e41;
+}
+.title:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

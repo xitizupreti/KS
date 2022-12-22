@@ -6,7 +6,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 const Header = () => {
   const navi =useNavigate();
   const here=()=>{
-    if (window.confirm('Consumes More Data!') == 0 || null){
+    if (window.confirm('Consumes More Data!') === 0 || null){
       return navi(-1);
     }
   }
@@ -28,8 +28,8 @@ const Header = () => {
           />
         </div>
         <h1 style={{marginTop:"10px"}}>
-          <span style={{ color: "blue" }}>Kshitiz</span>💘
-          <span style={{ color: "red" }}>Srijal</span>
+          <span style={{ color: "blue" }}>YOU</span>💘
+          <span style={{ color: "red" }}>ME</span>
         </h1>
         <div>
           <Hearts
@@ -45,7 +45,7 @@ const Header = () => {
         
       </div>
       <div className="menu">
-      <NavLink activeclassname="active" to="./home">
+      <NavLink activeclassname="active" to="/">
           Home
         </NavLink>
         <NavLink activeclassname="active" to="./pictures">
