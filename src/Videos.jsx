@@ -1,4 +1,5 @@
 import React from "react";
+import Vdata from "./Vdata";
 
 const Videos = () => {
   //   function importAll(r) {
@@ -14,9 +15,17 @@ const Videos = () => {
   // );
   return (
     <>
-      {/* {videos.map(({val}) => (
-        <ReactPlayer className="vid" url={val} />
-      ))} */}
+      {Vdata.map((item) => {
+        return (
+          <iframe
+            className="vid"
+            src={item}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        );
+      })}
       {/* <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[0]}/> </video>
       <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[1]}/> </video>
       <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[2]}/> </video>
@@ -26,8 +35,8 @@ const Videos = () => {
       <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[6]}/> </video>
       <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[7]}/> </video>
       <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[8]}/> </video> */}
-            {/* <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[1]}/> </video> */}
-      </>
+      {/* <video className="vid" preload="metadata" controls controlsList="nodownload"><source src={videos[1]}/> </video> */}
+    </>
   );
 };
 

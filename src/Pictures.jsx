@@ -1,4 +1,5 @@
 import React from "react";
+import { Idata } from "./Vdata";
 
 const Pictures = () => {
   // function importAll(r) {
@@ -14,11 +15,13 @@ const Pictures = () => {
   // );
   return (
     <>
-    {/* <div className="pictures">
-      {images.map((val) => {
-        return <img alt="" src={val} />;
+      {Idata.map((item) => {
+        return (
+          <div className="pictures">
+            <img alt="" src={item} />
+          </div>
+        );
       })}
-      </div> */}
     </>
   );
 };

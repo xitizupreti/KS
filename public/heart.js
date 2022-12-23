@@ -3,10 +3,10 @@ function heart(){
     heart.classList.add('heart');
 
     heart.style.left=Math.random()*100+"vw";
-    heart.style.animationDuration=Math.random()*2+3+"s";
+    heart.style.animationDuration=Math.random()*2+2+"s";
 
     heart.innerText='💘';
     document.body.appendChild(heart);
 }
 
-setInterval(heart,30);
+setInterval(heart,300);
