@@ -92,7 +92,7 @@ hr {
 }
 #a {
   position: relative;
-  height: fit-content;
+  height: 300px;
   max-width: 400px;
   padding: 10px;
 }
