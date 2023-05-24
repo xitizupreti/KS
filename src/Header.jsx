@@ -2,8 +2,22 @@ import React from "react";
 import logo from "./logo.jpg";
 import { Hearts } from "react-loader-spinner";
 import { NavLink } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Header = () => {
+  const notify = () => {
+    toast.warn("Consumes More Data!!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
   return (
     <>
       <div id="fix">
@@ -45,11 +59,19 @@ const Header = () => {
           <NavLink activeclassname="active" to="./pictures">
             Pictures
           </NavLink>
-          <NavLink
-            activeclassname="active"
-            onClick={() => alert("May Consume More Data!")}
-            to="./videos"
-          >
+          <NavLink activeclassname="active" onClick={notify} to="./videos">
+            <ToastContainer
+              position="top-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
             Videos
           </NavLink>
           <NavLink activeclassname="active" to="./stories">
